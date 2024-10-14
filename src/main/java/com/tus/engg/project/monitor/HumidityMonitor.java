@@ -16,7 +16,7 @@ public class HumidityMonitor {
 	@Autowired
 	private EmailNotification emailNotification;
 	
-	private static final int HUMIDITY_THRESHOLD = 60;
+	private static final int HUMIDITY_THRESHOLD = 50; // 60 is the recommended threshold for humidity
 	private boolean emailTrigger = false;
 	
 	public void mointorHumidity(List<SensorData> sensorData) {
